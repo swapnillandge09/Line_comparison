@@ -13,12 +13,22 @@ class Line:
     def length(self):
         return math.sqrt((self.p2.x - self.p1.x) ** 2 + (self.p2.y - self.p1.y) ** 2)
     
+    #uc2
+    def equality(self, l2):
+        if self.length() == l2.length():
+            return "Same" 
+        else:
+            return "Different"
+    
 
 if __name__ == "__main__":
     x1 = Point(1, 2)  
     x2 = Point(4, 6)  
-   
-    line1 = Line(x1, x2)
-
     
+    x3 = Point(0,1)
+    x4 = Point(3,4)
+    line1 = Line(x1, x2)
+    line2 = Line(x3,x4)
+
     print(f"Length of the line: {line1.length()}")
+    print(f"Length of the line: {line2.length()}")
