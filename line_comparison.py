@@ -41,5 +41,8 @@ if __name__ == "__main__":
     print(f"Length of the line: {line1.length()}")
     print(f"Length of the line: {line2.length()}")
 
+    
     equality_result = line1.equality(line2)
     print(equality_result)
+
+
