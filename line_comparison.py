@@ -20,6 +20,14 @@ class Line:
         else:
             return "Different"
     
+    #uc3    
+    def compare_lines(line1, line2):
+        if line1.length() == line2.length():
+            return "The two lines are equal in length."
+        elif line1.length() > line2.length():
+            return "The first line is greater than the second line."
+        else:
+            return "The first line is less than the second line."
 
 if __name__ == "__main__":
     x1 = Point(1, 2)  
@@ -32,3 +40,6 @@ if __name__ == "__main__":
 
     print(f"Length of the line: {line1.length()}")
     print(f"Length of the line: {line2.length()}")
+
+    equality_result = line1.equality(line2)
+    print(equality_result)
